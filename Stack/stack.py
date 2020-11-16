@@ -36,14 +36,14 @@ class Stack:
         else:
             return None
 
-    # def contains(self, top, data):
-    #     self.top = top
-    #     if self.top:
-    #         return True
-    #     if self.top.next:
-    #         return self.contains(self.top.next, data)
-    #
-    #     return None
+    def contains(self, top, data):
+        self.top = top
+        if self.top:
+            return True
+        if self.top.next:
+            return self.contains(self.top.next, data)
+
+        return None
 
 
 stack = Stack()
