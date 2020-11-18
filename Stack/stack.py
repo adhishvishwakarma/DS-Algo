@@ -36,21 +36,21 @@ class Stack:
         else:
             return None
 
-    def contains(self, top, data):
-        self.top = top
-        if self.top:
-            return True
-        if self.top.next:
-            return self.contains(self.top.next, data)
-
-        return None
+    # def contains(self, top, data):
+    #     self.top = top
+    #     if self.top:
+    #         return True
+    #     if self.top.next:
+    #         return self.contains(self.top.next, data)
+    #
+    #     return None
 
 
 stack = Stack()
 stack.push(8)
 stack.push(9)
 stack.push(10)
-print(stack.contains(8, 8))
-print(stack.contains(8, 9))
-print(stack.contains(8, 10))
-print(stack.contains(8, 11))
+# print(stack.contains(8, 8))
+# print(stack.contains(8, 9))
+# print(stack.contains(8, 10))
+# print(stack.contains(8, 11))
